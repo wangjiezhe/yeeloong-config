@@ -1,0 +1,3 @@
+sys-libs/liburing * ~*
+net-fs/samba * ~*
+dev-perl/Parse-Yapp * ~*

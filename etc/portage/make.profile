@@ -1,0 +1,1 @@
+../../var/db/repos/gentoo/profiles/default/linux/mips/23.0/mipsel/n32

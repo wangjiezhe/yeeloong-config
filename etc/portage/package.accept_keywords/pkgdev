@@ -1,0 +1,5 @@
+dev-util/pkgdev * ~*
+dev-util/pkgcheck * ~*
+dev-libs/tree-sitter-bash * ~*
+dev-libs/tree-sitter * ~*
+dev-python/tree-sitter * ~*
