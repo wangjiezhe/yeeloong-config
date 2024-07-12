@@ -1,0 +1,5 @@
+# dev-lang/rust-bin rust-src # no rust-analyzer, rustfmt and clippy component in official bin
+# dev-lang/rust rust-analyzer rustfmt clippy rust-src
+dev-lang/rust system-bootstrap
+# dev-lang/rust system-llvm
+dev-lang/rust LLVM_TARGETS: X86

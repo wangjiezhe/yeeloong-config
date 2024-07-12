@@ -1,0 +1,7 @@
+sys-apps/bat * ~*
+sys-apps/eza * ~*
+dev-libs/libgit2 * ~*
+sys-apps/fd * ~*
+sys-apps/lsd * ~*
+sys-apps/ripgrep * ~*
+dev-util/tailspin * ~*

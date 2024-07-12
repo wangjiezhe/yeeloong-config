@@ -1,4 +1,3 @@
-app-arch/rpm2targz
 app-editors/vim
 app-eselect/eselect-repository
 app-portage/eix
@@ -6,8 +5,10 @@ app-portage/genlop
 app-portage/gentoolkit
 app-text/tree
 dev-debug/strace
+dev-lang/rust
 dev-util/patchutils
 dev-util/pkgdev
+dev-util/tailspin
 dev-vcs/git
 net-analyzer/iftop
 net-analyzer/nload
@@ -16,14 +17,16 @@ net-misc/chrony
 net-print/brlaser
 net-wireless/iw
 net-wireless/wpa_supplicant
-sys-apps/hwinfo
-sys-apps/lshw
+sys-apps/bat
+sys-apps/fd
+sys-apps/lsd
 sys-apps/mlocate
 sys-apps/pciutils
+sys-apps/ripgrep
 sys-apps/the_silver_searcher
 sys-apps/usbutils
 sys-fs/dfc
-sys-kernel/gentoo-sources
+sys-kernel/gentoo-sources:6.6.37
 sys-process/dcron
 sys-process/htop
 sys-process/lsof
