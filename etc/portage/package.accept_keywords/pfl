@@ -1,0 +1,3 @@
+app-portage/pfl * ~*
+dev-cpp/abseil-cpp * ~*
+dev-python/termcolor * ~*
