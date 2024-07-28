@@ -1,0 +1,28 @@
+## neovim
+app-editors/neovim * ~*
+dev-lua/luv * ~*
+dev-lua/mpack * ~*
+dev-libs/libvterm * ~*
+dev-libs/msgpack * ~*
+dev-libs/libmpack * ~*
+dev-libs/unibilium * ~*
+
+## luarocks
+dev-lua/luarocks * ~*
+
+## optfeature: clipboard support
+x11-misc/xclip * ~*
+
+## optfeature: python plugin support
+dev-python/pynvim * ~*
+dev-python/msgpack * ~*
+
+## optfeature: remote/nvr support
+dev-python/neovim-remote * ~*
+
+## optfeature: ruby plugin support
+# dev-ruby/neovim-ruby-client * ~*
+# dev-ruby/msgpack * ~*
+
+## tree-sitter
+dev-libs/tree-sitter-* * ~*

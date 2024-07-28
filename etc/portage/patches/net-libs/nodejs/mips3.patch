@@ -1,0 +1,11 @@
+diff '--color=auto' -ur node-v22.4.1/configure.py node-v22.4.1_modified/configure.py
+--- node-v22.4.1/configure.py	2024-07-08 20:39:56.000000000 +0800
++++ node-v22.4.1_modified/configure.py	2024-07-27 17:12:10.769510940 +0800
+@@ -636,7 +636,7 @@
+ parser.add_argument('--with-mips-arch-variant',
+     action='store',
+     dest='mips_arch_variant',
+-    default='r2',
++    default='r1',
+     choices=valid_mips_arch,
+     help=f"MIPS arch variant ({', '.join(valid_mips_arch)}) [default: %(default)s]")

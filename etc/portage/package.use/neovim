@@ -1,0 +1,7 @@
+## Revert settings in /var/db/repos/gentoo/profiles/base/package.use
+app-editors/neovim LUA_SINGLE_TARGET: -luajit lua5-1
+dev-lua/luv LUA_SINGLE_TARGET: -luajit lua5-1
+dev-lua/lpeg LUA_TARGETS: -luajit
+dev-lua/mpack LUA_TARGETS: -luajit
+
+# dev-lang/luajit amalg

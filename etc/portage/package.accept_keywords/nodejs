@@ -1,0 +1,3 @@
+net-libs/nodejs * ~*
+net-libs/ngtcp2 * ~*
+dev-libs/simdjson * ~*
