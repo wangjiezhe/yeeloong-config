@@ -1,0 +1,3 @@
+function pre_src_configure() {
+	ln -s "${BROOT}"/usr/bin/lua5.1 "${BUILD_DIR}"/lua5.1 || die
+}

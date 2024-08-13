@@ -6,6 +6,6 @@ diff '--color=auto' -ur node-v22.4.1/configure.py node-v22.4.1_modified/configur
      action='store',
      dest='mips_arch_variant',
 -    default='r2',
-+    default='r1',
++    default='loongson',
      choices=valid_mips_arch,
      help=f"MIPS arch variant ({', '.join(valid_mips_arch)}) [default: %(default)s]")
