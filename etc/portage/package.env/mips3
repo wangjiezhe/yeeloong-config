@@ -1,0 +1,5 @@
+sys-apps/ripgrep-all mips3
+sys-apps/lsd mips3
+sys-libs/glibc mips3
+dev-lang/rust mips3
+sys-devel/gcc mips3

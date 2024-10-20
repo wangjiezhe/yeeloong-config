@@ -1,0 +1,39 @@
+diff '--color=auto' -ur node-v22.4.1/configure.py node-v22.4.1_modified/configure.py
+--- node-v22.4.1/configure.py	2024-07-08 20:39:56.000000000 +0800
++++ node-v22.4.1_modified/configure.py	2024-07-27 17:12:10.769510940 +0800
+@@ -636,7 +636,7 @@
+ parser.add_argument('--with-mips-arch-variant',
+     action='store',
+     dest='mips_arch_variant',
+-    default='r2',
++    default='loongson',
+     choices=valid_mips_arch,
+     help=f"MIPS arch variant ({', '.join(valid_mips_arch)}) [default: %(default)s]")
+ 
+diff '--color=auto' -ur node-v22.4.1/tools/v8_gypfiles/v8.gyp node-v22.4.1_modified/tools/v8_gypfiles/v8.gyp
+--- node-v22.4.1/tools/v8_gypfiles/v8.gyp	2024-07-08 20:40:00.000000000 +0800
++++ node-v22.4.1_modified/tools/v8_gypfiles/v8.gyp	2024-07-27 17:26:56.499371354 +0800
+@@ -1148,6 +1148,23 @@
+           'sources': [
+             '<!@pymod_do_main(GN-scraper "<(V8_ROOT)/BUILD.gn"  "\\"v8_base_without_compiler.*?v8_enable_wasm_gdb_remote_debugging.*?v8_current_cpu == \\"mips64\\".*?sources \\+= ")',
+           ],
++          'conditions': [
++            ['v8_enable_webassembly==1', {
++              'conditions': [
++                ['(_toolset=="host" and host_arch=="arm64" or _toolset=="target" and target_arch=="arm64") or (_toolset=="host" and host_arch=="mips64" or _toolset=="target" and target_arch=="mips64") or (_toolset=="host" and host_arch=="mips64el" or _toolset=="target" and target_arch=="mips64el")  or (_toolset=="host" and host_arch=="x64" or _toolset=="target" and target_arch=="x64")', {
++                  'sources': [
++                    '<(V8_ROOT)/src/trap-handler/handler-inside-posix.cc',
++                    '<(V8_ROOT)/src/trap-handler/handler-outside-posix.cc',
++                  ],
++                }],
++                ['(_toolset=="host" and host_arch=="x64" or _toolset=="target" and target_arch=="x64") and (OS=="linux" or OS=="mac" or OS=="win")', {
++                  'sources': [
++                    '<(V8_ROOT)/src/trap-handler/handler-outside-simulator.cc',
++                  ],
++                }],
++              ],
++            }],
++          ],
+         }],
+         ['v8_target_arch=="ppc"', {
+           'sources': [

@@ -5,3 +5,12 @@ sys-apps/fd * ~*
 sys-apps/lsd * ~*
 sys-apps/ripgrep * ~*
 dev-util/tailspin * ~*
+dev-util/git-delta * ~*
+sys-apps/eza * ~*
+sys-apps/ripgrep-all * ~*
+
+sys-apps/bat-extras * ~*
+dev-util/sh * ~*
+app-admin/entr * ~*
+app-shells/fzf * ~*
+

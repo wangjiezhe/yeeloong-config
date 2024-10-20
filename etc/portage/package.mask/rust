@@ -1,0 +1,2 @@
+## Requires libgit2:0/1.7, while others require libgit2:0/1.8
+=dev-util/git-delta-0.17.0

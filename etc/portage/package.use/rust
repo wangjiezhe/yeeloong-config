@@ -3,3 +3,7 @@
 dev-lang/rust system-bootstrap
 # dev-lang/rust system-llvm
 dev-lang/rust LLVM_TARGETS: X86
+
+# Required by bat-extras
+virtual/rust rustfmt
+dev-lang/rust rustfmt

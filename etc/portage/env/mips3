@@ -1,0 +1,6 @@
+COMMON_FLAGS="-O2 -march=mips3 -mtune=loongson2f -mabi=64 -Wa,-mfix-loongson2f-nop -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
