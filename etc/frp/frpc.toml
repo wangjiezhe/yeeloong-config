@@ -1,0 +1,10 @@
+serverAddr = "**.***.***.**"
+serverPort = 7000
+transport.protocol = "quic"
+auth.token = "**************"
+
+[[proxies]]
+name = "Gentoo Binary Host for yeeloong"
+type = "http"
+localPort = 80
+customDomains = ["yeeloong.wangjiezhe.com"]
