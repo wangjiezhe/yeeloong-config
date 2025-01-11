@@ -1,0 +1,3 @@
+# Patch need to be updated due to
+# https://github.com/torvalds/linux/commit/4551978bb50a8d59b49629deebacd73478a8b1e1
+>=sys-kernel/gentoo-sources-6.10

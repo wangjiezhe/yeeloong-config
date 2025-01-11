@@ -16,6 +16,7 @@ x11-misc/xclip * ~*
 ## optfeature: python plugin support
 dev-python/pynvim * ~*
 dev-python/msgpack * ~*
+dev-python/greenlet * ~*
 
 ## optfeature: remote/nvr support
 dev-python/neovim-remote * ~*

@@ -1,0 +1,4 @@
+net-libs/nodejs:0/14 gcc-12
+net-libs/nodejs:0/12 gcc-12
+net-libs/nodejs:0/10 gcc-12
+net-libs/nodejs mips3

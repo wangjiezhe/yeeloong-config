@@ -1,0 +1,3 @@
+# required by sys-kernel/genkernel-4.3.16-r3::gentoo[firmware]
+# required by genkernel (argument)
+=sys-kernel/linux-firmware-20241210-r1 linux-fw-redistributable
