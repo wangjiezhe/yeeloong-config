@@ -1,0 +1,22 @@
+https://github.com/moby/buildkit/issues/5129
+diff '--color=auto' -ur moby-27.4.1.orig/vendor/github.com/moby/buildkit/snapshot/diffapply_linux.go moby-27.4.1/vendor/github.com/moby/buildkit/snapshot/diffapply_linux.go
+--- moby-27.4.1.orig/vendor/github.com/moby/buildkit/snapshot/diffapply_linux.go	2025-01-11 11:44:58.308632983 +0800
++++ moby-27.4.1/vendor/github.com/moby/buildkit/snapshot/diffapply_linux.go	2025-01-11 11:46:35.272707491 +0800
+@@ -125,7 +125,7 @@
+ 	}
+ 	return inode{
+ 		ino: stat.Ino,
+-		dev: stat.Dev,
++		dev: uint64(stat.Dev),
+ 	}
+ }
+ 
+@@ -294,7 +294,7 @@
+ 			if ca.srcStat == nil {
+ 				ca.srcStat = &syscall.Stat_t{
+ 					Mode: syscall.S_IFCHR,
+-					Rdev: unix.Mkdev(0, 0),
++					Rdev: 0,
+ 				}
+ 				ca.srcPath = ""
+ 			}
