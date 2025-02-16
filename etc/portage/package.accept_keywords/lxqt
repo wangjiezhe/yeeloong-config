@@ -1,0 +1,34 @@
+lxqt-base/* * ~*
+
+media-gfx/lximage-qt * ~*
+x11-misc/obconf-qt * ~*
+x11-misc/pcmanfm-qt * ~*
+
+
+dev-qt/* * ~*
+kde-frameworks/* * ~*
+kde-plasma/* * ~*
+
+app-arch/lxqt-archiver * ~*
+app-crypt/qca * ~*
+app-misc/qtxdg-tools * ~*
+dev-cpp/muParser * ~*
+dev-libs/libdbusmenu-lxqt * ~*
+dev-libs/libei * ~*
+dev-libs/libqtxdg * ~*
+dev-libs/plasma-wayland-protocols * ~*
+dev-util/lxqt-build-tools * ~*
+gui-libs/xdg-desktop-portal-lxqt * ~*
+media-libs/assimp * ~*
+sys-auth/polkit-qt * ~*
+sys-apps/bubblewrap * ~*
+sys-apps/xdg-desktop-portal * ~*
+sys-power/switcheroo-control * ~*
+x11-base/xwayland * ~*
+x11-libs/libfm-qt * ~*
+x11-libs/qtermwidget * ~*
+x11-misc/qps * ~*
+x11-misc/screengrab * ~*
+x11-misc/sddm * ~*
+x11-terms/qterminal * ~*
+x11-themes/lxqt-themes * ~*

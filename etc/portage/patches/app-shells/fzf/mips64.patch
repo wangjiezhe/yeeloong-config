@@ -1,0 +1,31 @@
+diff --git a/Makefile b/Makefile
+index 7c6bd54b..f8c8ccb8 100644
+--- a/Makefile
++++ b/Makefile
+@@ -37,6 +37,7 @@ BINARYARM8     := fzf-$(GOOS)_arm8
+ BINARYPPC64LE  := fzf-$(GOOS)_ppc64le
+ BINARYRISCV64  := fzf-$(GOOS)_riscv64
+ BINARYLOONG64  := fzf-$(GOOS)_loong64
++BINARYMIPS64   := fzf-$(GOOS)_mips64
+ 
+ # https://en.wikipedia.org/wiki/Uname
+ UNAME_M := $(shell uname -m)
+@@ -70,6 +71,8 @@ else ifeq ($(UNAME_M),riscv64)
+ 	BINARY := $(BINARYRISCV64)
+ else ifeq ($(UNAME_M),loongarch64)
+ 	BINARY := $(BINARYLOONG64)
++else ifeq ($(UNAME_M),mips64)
++	BINARY := $(BINARYMIPS64)
+ else
+ $(error Build on $(UNAME_M) is not supported, yet.)
+ endif
+@@ -171,6 +174,9 @@ target/$(BINARYRISCV64): $(SOURCES)
+ target/$(BINARYLOONG64): $(SOURCES)
+ 	GOARCH=loong64 $(GO) build $(BUILD_FLAGS) -o $@
+ 
++target/$(BINARYMIPS64): $(SOURCES)
++	GOARCH=mips64le $(GO) build $(BUILD_FLAGS) -o $@
++
+ bin/fzf: target/$(BINARY) | bin
+ 	-rm -f bin/fzf
+ 	cp -f target/$(BINARY) bin/fzf
